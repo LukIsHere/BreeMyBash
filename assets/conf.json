@@ -1,0 +1,21 @@
+{
+    "prompt":"\\u@\\h \\w \\$ ",
+    "welcome":[
+        "bree art",
+        "bree task",
+        "bree plan",
+        "bree cal"
+    ],
+    "shortcuts":{
+    },
+    "hosts":{
+
+    },
+    "custom":{
+        "reload":"clear && source ~/.bashrc",
+        "fullupdate":"sudo apt update && sudo apt upgrade -y"
+    },
+    "path":[
+
+    ]
+}

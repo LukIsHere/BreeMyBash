@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+#path
+#The function refers to passed arguments by their position (not by name), that is $1, $2, and so forth. $0 is the name of the script itself.
+addPath(){
+	PATH=$PATH:$1
+}
+
+addPath "/home/luk/opt/clipboard/bin"
+addPath "/home/luk/Dokumenty/bree-ai/bin"
+
+
+#directories
+alias dtmp="cd ~/tmp"
+alias dhome="cd ~/"
+alias dapps="cd ~/.local/share/applications"
+alias dopt="cd ~/opt"
+alias ddownloads="cd ~/Pobrane"
+
+#ssh
+alias csrv="ssh luk@ssh.lukishere.dev"
+alias cfon="ssh user@192.168.1.18"
+alias cvps="ssh ubuntu@130.61.135.39"
+
+#util
+alias gitc="cd ~/tmp && git clone"
+alias reload="clear && source ~/.bashrc"
+alias cdone="paplay ~/Dokumenty/done.ogg"
+alias econf="nano ~/.lukconf && reload"
+alias fullupdate="sudo apt update && sudo apt upgrade -y"
+
+#setup
+
+cat ~/Dokumenty/bree.txt
+bree task
+bree plan
+bree cal

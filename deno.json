@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "compile-bree": "deno compile --allow-run --allow-env --allow-write --allow-read --output bin/bree src/bree.ts",
+    "compile-envee": "deno compile --allow-env --allow-write --allow-read --output bin/envee src/envee.ts"
+  }
+}
