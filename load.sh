@@ -2,8 +2,7 @@
 #for debugging purposes only
 #export debugbree=true
 
-export breePath=$(pwd)
-source ./helper/env.sh
+source "$breePath/helper/env.sh"
 
 #adding bree to path
 addPath "$breePath/bin"
