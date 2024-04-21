@@ -5,7 +5,7 @@
 bash ./compile.sh
 
 echo "export breePath=$(pwd)" >> ~/.bashrc
-echo "$(pwd)/load.sh" >> ~/.bashrc
+echo "source $(pwd)/load.sh" >> ~/.bashrc
 
 
 source ~/.bashrc
