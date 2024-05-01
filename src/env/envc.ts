@@ -66,7 +66,7 @@ export function recompile(){
     })
     out +="#path\n"
     env.path.forEach(p=>{
-        out += "addPath \"cd "+p+"\"\n"
+        out += "addPath \""+p+"\"\n"
     })
     out +="#welcome\n"
     env.welcome.forEach(cmd=>{
