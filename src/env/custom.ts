@@ -1,6 +1,6 @@
 import { Branch, Rest } from "../utils/branch.ts";
 import { loopObj } from "../utils/parse.ts";
-import { loadEnv, recompile, updateEnv } from "./envc.ts";
+import { loadEnv, updateEnv } from "./envc.ts";
 
 function customHelp(){
     console.log("Usage :")
@@ -31,7 +31,6 @@ function customAdd(rest:Rest){
         customList([],env)
         return env;
     })
-    recompile()
 }
 
 function customDel(rest:Rest){
@@ -40,7 +39,6 @@ function customDel(rest:Rest){
         customList([],env)
         return env;
     })
-    recompile();
 }
 
 export const customCommand:Branch = {

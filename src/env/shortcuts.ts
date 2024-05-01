@@ -1,6 +1,6 @@
 import { Branch, Rest } from "../utils/branch.ts";
 import { loopObj } from "../utils/parse.ts";
-import { loadEnv, recompile, updateEnv } from "./envc.ts";
+import { loadEnv, updateEnv } from "./envc.ts";
 
 function shortcutsHelp(){
     console.log("Usage :")
@@ -33,7 +33,6 @@ function shortcutsAdd(rest:Rest){
         shortcutsList([],env)
         return env;
     })
-    recompile()
 }
 
 function shortcutsDel(rest:Rest){
@@ -42,7 +41,6 @@ function shortcutsDel(rest:Rest){
         shortcutsList([],env)
         return env;
     })
-    recompile();
 }
 
 export const shortcutsCommand:Branch = {

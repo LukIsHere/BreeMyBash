@@ -1,5 +1,5 @@
 import { Branch, Rest } from "../utils/branch.ts";
-import { recompile, updateEnv } from "./envc.ts";
+import { updateEnv } from "./envc.ts";
 
 function prompt(rest:Rest){
     if(rest.length==0){
@@ -15,7 +15,6 @@ function prompt(rest:Rest){
         e.prompt = rest.join(" ")
         return e;
     }))
-    recompile();
 }
 
 export const promptCommand:Branch = {

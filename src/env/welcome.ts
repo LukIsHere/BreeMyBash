@@ -1,7 +1,7 @@
 import { delArrayIndex, downArrayIndex, upArrayIndex } from "../utils/arrayer.ts";
 import { Branch, Rest } from "../utils/branch.ts";
 import { parserInt } from "../utils/parse.ts";
-import { loadEnv, recompile, updateEnv } from "./envc.ts";
+import { loadEnv, updateEnv } from "./envc.ts";
 
 function welcomeHelp(){
     console.log("Usage :")
@@ -35,7 +35,6 @@ function welcomeAdd(rest:Rest){
         welcomeList([],env);
         return env;
     })
-    recompile();
 }
 
 function welcomeDel(rest:Rest){
@@ -44,7 +43,6 @@ function welcomeDel(rest:Rest){
         welcomeList([],env);
         return env;
     })
-    recompile();
 }
 
 function welcomeUp(rest:Rest){
@@ -53,7 +51,6 @@ function welcomeUp(rest:Rest){
         welcomeList([],env);
         return env;
     })
-    recompile();
 }
 
 function welcomeDown(rest:Rest){
@@ -62,7 +59,6 @@ function welcomeDown(rest:Rest){
         welcomeList([],env);
         return env;
     })
-    recompile();
 }
 
 export const welcomeCommand:Branch = {

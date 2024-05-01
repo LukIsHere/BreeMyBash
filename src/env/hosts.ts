@@ -1,6 +1,6 @@
 import { Branch, Rest } from "../utils/branch.ts";
 import { loopObj } from "../utils/parse.ts";
-import { loadEnv, recompile, updateEnv } from "./envc.ts";
+import { loadEnv, updateEnv } from "./envc.ts";
 
 function hostsHelp(){
     console.log("Usage :")
@@ -31,7 +31,6 @@ function hostsAdd(rest:Rest){
         hostsList([],env)
         return env;
     })
-    recompile()
 }
 
 function hostsDel(rest:Rest){
@@ -40,7 +39,6 @@ function hostsDel(rest:Rest){
         hostsList([],env)
         return env;
     })
-    recompile();
 }
 
 export const hostsCommand:Branch = {

@@ -1,7 +1,7 @@
 import { delArrayIndex } from "../utils/arrayer.ts";
 import { Branch, Rest } from "../utils/branch.ts";
 import { parserInt } from "../utils/parse.ts";
-import { loadEnv, recompile, updateEnv } from "./envc.ts";
+import { loadEnv, updateEnv } from "./envc.ts";
 
 function pathHelp(){
     console.log("Usage :")
@@ -33,7 +33,6 @@ function pathAdd(rest:Rest){
         pathList([],env);
         return env;
     })
-    recompile()
 }
 
 function pathDel(rest:Rest){
@@ -42,7 +41,6 @@ function pathDel(rest:Rest){
         pathList([],env);
         return env;
     })
-    recompile();
 }
 
 export const pathCommand:Branch = {
