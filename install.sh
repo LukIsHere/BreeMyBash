@@ -1,6 +1,6 @@
 #!/bin/bash
-#mkdir data
-#cp assets/* data/
+mkdir data
+cp assets/* data/
 
 bash ./compile.sh
 
