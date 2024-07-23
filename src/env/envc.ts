@@ -50,7 +50,8 @@ export function recompile(){
     validate(envStruct,env)
     let out = "#!/bin/bash\n#this file is edited by envee\n#any changes made manualy will be erased\n#with next recompilation\n"
     
-    out += "PS1=\""+env.prompt+"\"\n"
+    if(env.prompt)
+        out += "PS1=\""+env.prompt+"\"\n"
     
     out += "#shortcuts\n"
     loopObj<string>(env.shortcuts,(k,v)=>{
